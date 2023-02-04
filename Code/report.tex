@@ -1,0 +1,55 @@
+\documentclass{amsart}
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+\begin{document}
+%
+%=================================================================
+%
+\title[Pollution Prediction]{Air Pollution Measurements Prediction}%
+
+\author{Yu Li}
+\address[A.~1]{School of Computer Science,\\ 
+Nanjing University of Science and Technology, Jiangsu 246000, China}%
+\email[A.~1]{yli@tulip.academy}
+
+
+%\thanks{Thanks to \ldots}%
+\subjclass{Artificial Intelligence}%
+\date{\gitAuthorDate}%
+
+\input{./tex/abstract}
+
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{./tex/mainbody}
+
+%=================================================================
+
+
+\end{document}
+
